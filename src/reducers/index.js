@@ -1,11 +1,12 @@
 import { combineReducers } from 'redux';
 import BooksReducer from './reducer_books';
 import StudentsReducer from './reducer_estudents';
+import ActiveBook from './reducer_active_book';
 
 // combineReducers: will include this to the application state
 const rootReducer = combineReducers({
   books: BooksReducer,
-  students: StudentsReducer
+  activeBook: ActiveBook
 });
 
 export default rootReducer;
